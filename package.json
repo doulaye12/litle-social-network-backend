@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "a litle social network !",
+  "main": "index.js",
+  "repository": "https://github.com/doulaye12/litle-social-network-backend.git",
+  "author": "Laye Mangane",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon -V index.js",
+    "db:init": "yarn sequelize-cli db:drop && yarn sequelize-cli db:create && yarn sequelize-cli db:migrate && yarn sequelize-cli db:seed:all"
+  },
+  "dependencies": {
+    "backend": "file:",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.3",
+    "nodemailer": "^6.9.15",
+    "otplib": "^12.0.1",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.7",
+    "sequelize-cli": "^6.6.2"
+  }
+}
